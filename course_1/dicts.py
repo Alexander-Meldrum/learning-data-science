@@ -1,16 +1,15 @@
-# Author: Alexander Meldrum
 from csv import DictReader
 import matplotlib.pyplot as plot
 
 cars = list(DictReader(open('cars.csv','r'),delimiter=';'))[1:]
 
-# Learn to sort:
+### Learn to sort:
 # def compare_hp(row):
 #     return float(row['Horsepower'])
 
 # cars.sort(key=compare_hp)
 
-# Lambda version:
+### Lambda version:
 cars.sort(key = lambda row: float(row['Horsepower']))
 
 
@@ -21,7 +20,7 @@ cars.sort(key = lambda row: float(row['Horsepower']))
 # cars = cars_copy
 
 
-# list comprehension
+### list comprehension
     # https://www.w3schools.com/python/python_lists_comprehension.asp
 cars = [car for car in cars if float(car['Horsepower']) != 0.0]
 
@@ -38,18 +37,18 @@ for car in cars:
 for i in range(len(horsepower)):
     print(horsepower[i], acceleration[i])
 
-# plot
+### plot
 # plot.scatter(horsepower,acceleration)
 # plot.show()
 
-# Learn sets
+### Learn sets
 #print(set(horsepower))
 
-# Dict comprehension
+### Dict comprehension
 freq = {item: horsepower.count(item) for item in set(horsepower) }
 #print(freq)
 
-# Learn Tuples
+### Learn Tuples
 def get_horsepower_acceleration(cars):
     horsepower = []
     acceleration = []
@@ -67,7 +66,7 @@ for i in range(len(item1)):
     items.append((item1[i],item2[i]))
 print(items)
 
-""" Zip Lists """
+### Zip Lists
 # itemsnr2 = list(zip(item1,item2))
 # print(itemsnr2)
 

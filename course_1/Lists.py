@@ -1,4 +1,3 @@
-# Author: Alexander Meldrum
 # https://stackoverflow.com/questions/509211/understanding-slice-notation
 
 from csv import reader
@@ -12,13 +11,13 @@ cars = cars[2:]
 for car in cars:
     car[4] = float(car[4])
 
-# Sort by horsepower
-# Normal sort
+### Sort by horsepower
+### Normal sort
 # def item_5(row):
 #     return row[4]
 # cars.sort(key=item_5)
 
-# Lambda Sort
+### Lambda Sort
 cars.sort(key= lambda row: row[4])
 
 
@@ -26,11 +25,11 @@ cars.sort(key= lambda row: row[4])
 #     print(car)
 
 
-#Slicing
+### Slicing
 # for car in cars[-1:-11:-1]:
 #     print(car)
 
-# List objects
+### List objects
     # Changing top level items [0] is different from chaning for example [0][0]
 
 cars_view = cars[-1:-11:-1]
