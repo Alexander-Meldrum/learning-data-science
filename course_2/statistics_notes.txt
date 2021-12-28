@@ -1,0 +1,23 @@
+Standard deviation:
+The standard deviation is found by taking the mean of the squared distances between each data point and the mean, 
+and then taking the square root of that. For example, if you have the values 1,2,3,4,5, then:
+The mean is (1+2+3+4+5)/5=3
+The differences between each data point and the mean are -2,-1,0,1,2
+The squares of those differences are 4,1,0,1,4
+The mean of those is 2   (= Variance)
+So the standard deviation is sqrt(2) or about 1.41
+
+Mode: 
+Value that appears most often. [1,2,3,4,5] has no mode 
+
+Standard Error:
+Variability of sample means,   = sigma / sqrt(n)  , where n nr of samples.
+Take a huge number of random samples from the same population and calculate the mean for each of those samples, then the distribution of the sample means will be normally distributed with a mean that is equal to the true population mean. This is a simplification of the central limit theorem. The standard deviation of this sampling distribution is the standard error.
+standard error of the sampling distribution can be interpreted as the 'average distance between a sample mean and the population mean'
+
+Significance/alpha level:
+Is the probability of rejecting the null hypothesis when it is true  (usually set to 5%)
+
+p-value:
+Measure of the probability that an observed difference could have occurred just by random chance. The lower the p-value, the greater the statistical significance of the observed difference.
+Throw away null hypothesis if p < alpha
