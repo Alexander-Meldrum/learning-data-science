@@ -18,5 +18,4 @@ The Data Science Course: Complete Data Science Bootcamp
 - Deep Learning (Tensorflow)
 - Machine Learning Project with visuals in Tableau
 - Python Pandas
-
 https://www.udemy.com/course/the-data-science-course-complete-data-science-bootcamp/

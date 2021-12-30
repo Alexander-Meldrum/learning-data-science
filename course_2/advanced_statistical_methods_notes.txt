@@ -1,0 +1,24 @@
+Linear Regression:
+yhat = b0 * 1 + b1 * x1       the "1" is added like: x = sm.add_constant(x1)
+
+R-squared (Coefficient of determination):
+R^2 = SSR / SST       [0 - 1]  Regression Variability / Total Dataset Variability
+R^2 = 1 - RSS / TSS            1 - unexplained variation / total variation
+The R-squared shows how much of the total variability of the dataset is explained by your regression model. This may be expressed as: how well your model fits your data. It is incorrect to say your regression line fits the data, as the line is the geometrical representation of the regression equation. It also incorrect to say the data fits the model or the regression line, as you are trying to explain the data with a model, not vice versa.
+if the R2 of a model is 0.50, then approximately half of the observed variation can be explained by the model's inputs.
+R-squared of 100% means that all movements of dependent variables are completely explained by movements in the index independent variable(s) (x1..)
+
+Adjusted R-squared:
+Adjusted R-squared used for multiple linear regression
+Adjusted R-squared < R-squared
+
+OLS (Ordinary least squares) Linear Regression Assumptions:
+There are assumptions that if broken, yields pointless OLS Regression
+1: The regression model is linear in the coefficients and the error term 
+2: The error term has a population mean of zero
+3: All independent variables are uncorrelated with the error term
+4: Observations of the error term are uncorrelated with each other
+5: The error term has a constant variance (no heteroscedasticity)
+6: No independent variable is a perfect linear function of other explanatory variables
+7: The error term is normally distributed (optional)
+https://statisticsbyjim.com/regression/ols-linear-regression-assumptions/
