@@ -22,3 +22,8 @@ There are assumptions that if broken, yields pointless OLS Regression
 6: No independent variable is a perfect linear function of other explanatory variables
 7: The error term is normally distributed (optional)
 https://statisticsbyjim.com/regression/ols-linear-regression-assumptions/
+
+Categorial data in linear regression:
+Use mapping, ex: data['Attendance'] = data['Attendance'].map({'Yes': 1, 'No': 0})
+1 or 0 is called dummy
+Regression line: yhat = b0 + b1 * 1   or yhat = b0 + b1 * 0
