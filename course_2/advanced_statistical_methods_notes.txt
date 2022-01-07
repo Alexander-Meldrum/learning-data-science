@@ -27,3 +27,12 @@ Categorial data in linear regression:
 Use mapping, ex: data['Attendance'] = data['Attendance'].map({'Yes': 1, 'No': 0})
 1 or 0 is called dummy
 Regression line: yhat = b0 + b1 * 1   or yhat = b0 + b1 * 0
+If N Categorial variables for a feature, create N-1 dummy to not get multicollinearity
+
+
+f-regression:
+calculate regression on each feature (x1,x2...) and see p-values etc. Then those features can be ignored if deemed non-affecting.
+
+Under/Overfitting:
+Underfitting would be to simple of model, overfitting would be curve going through all data samples.
+Solution for overfitting is to split the sample data (Training/testing). (sklearn: train_test_split() )
