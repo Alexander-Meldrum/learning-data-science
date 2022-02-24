@@ -14,6 +14,7 @@ The Data Science Course: Complete Data Science Bootcamp
 - Statistics
 - Python
 - Advanced statistical methods in Python
+- Machine Learning (Linear & logistic regression, K-means clustering)
 - Mathematics
 - Deep Learning (Tensorflow)
 - Machine Learning Project with visuals in Tableau
